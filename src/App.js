@@ -1,6 +1,4 @@
-import React, {useState,useEffect, useRef } from "react";
-import Hammer from "./Hammer";
-import { motion } from 'framer-motion';
+import React from "react";
 import Board from "./Board";
 
 function App() {

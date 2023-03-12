@@ -3,30 +3,6 @@ import Mole from './Mole'
 import data from './data'
 
 const Board = () => {
-/*
-  const[state,setState] = useState(false);
-
-  useEffect(()=>{
-    const random_number = Math.floor(Math.random() * 9) + 1; //Bettween 1 and 10
-    
-    const changes = setInterval(() => {
-      if (id===random_number) {
-        upisde='mole'
-      }
-    }, 1500);
-    clearInterval(changes);
- 
-
-    if (id===random_number) {
-      isUpside=true
-    }
-  },[state])
-
-  const handleClick = (id) =>{
-    reference.current.removeChild(reference.current.children[0])
-    //setState(true)
-
-  }*/
 
   const [state,setState] = useState(data);
   const [nextPosition,setNextPosition] = useState(1);

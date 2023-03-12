@@ -8,16 +8,12 @@ const Mole =({id,isUpside,isHited,onHit}) => {
     <div className={`hole`}>
       {
         isUpside &&
-
-        /*<img src={isHited ? moleHitedImg : moleImg} 
-          className='mole' alt='mole' 
-          onClick={!isHited ? ()=> onHit(id) : null} /> */
-
-        <button onClick={!isHited ? ()=> onHit(id) : null}>
-          <img src={isHited ? moleHitedImg : moleImg} 
+       
+          <img onClick={!isHited ? ()=> onHit(id) : null}
+            src={isHited ? moleHitedImg : moleImg} 
             className='mole' alt='mole' 
-             />
-        </button>
+          />
+    
       }
     </div>
   )
